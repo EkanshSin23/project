@@ -5,18 +5,25 @@ import Featuredcard from '../featuredcard/Featuredcard';
 const Featured = () => {
     return (
         <div className='featured'>
-            <div className="top"></div>
             <div className="container">
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
-                <Featuredcard />
+                <div className="top">
+                    <h1>Featured Job</h1>
+                    <p>Search your career opportunity through 12,800 jobs</p>
+                </div>
+                <div className="center">
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                    <Featuredcard />
+                </div>
+                <div className="bottom">
+                    <button>All Offers ></button>
+                </div>
             </div>
-            <div className="bottom"></div>
 
         </div>
     )

@@ -6,11 +6,91 @@
     width: 250px;
     padding: 30px;
     border-radius: 30px;
-    background-color: red;
-    // align-items: center;
-    // justify-content: space-around;
-    // background-color: #e6f0f9;
-    // background-color: #c4e8c2;
-    // transition: all 0.4s ease;
-    // cursor: pointer;
+    background-color: white;
+    justify-content: space-between;
+    -webkit-box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+    box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+
+
+    .top {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .topTop {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .icon {
+                background-color: #e6f0f9;
+                border-radius: 5px;
+                font-size: 25px;
+                padding: 8px
+            }
+
+            .link {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        .centerTop {
+            font-size: 20px;
+            font-weight: 900;
+
+
+        }
+
+        .bottomTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+            }
+
+            .right {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .leftBottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            line-height: 1;
+
+            .date {
+                font-size: 12px;
+            }
+
+            .name {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+
+        .rightBottom {
+
+
+            img {
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+
+
 }

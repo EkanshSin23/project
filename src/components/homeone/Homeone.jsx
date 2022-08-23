@@ -2,6 +2,7 @@ import React from 'react'
 import './homeone.scss'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import PublicIcon from '@mui/icons-material/Public';
+import 'animate.css';
 
 const Homeone = () => {
     return (
@@ -41,9 +42,9 @@ const Homeone = () => {
             </div>
             <div className="right">
                 <div className="cards">
-                    <div className="cardone"></div>
-                    <div className="cardtwo"></div>
-                    <div className="cardthree"></div>
+                    <div className="cardone animate__animated animate__fadeInRight"></div>
+                    <div className="cardtwo "></div>
+                    <div className="cardthree "></div>
                     <div className="cardinfo">
                         <div className="content">
                             <div className="title">
@@ -61,7 +62,7 @@ const Homeone = () => {
                         </div>
                     </div>
                 </div>
-                <div className="colordiv"></div>
+                <div className="colordiv "></div>
 
             </div>
         </div>

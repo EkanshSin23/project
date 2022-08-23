@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import WorkIcon from '@mui/icons-material/Work';
 const Card = () => {
     return (
-        <div className='card' >
-            <div className="icons">
+        <div className='card animate__animated animate__fadeInUp' >
+            <div className="icons ">
                 <WorkIcon className='icon' />
             </div>
             <div className="title">Buisness Developement</div>

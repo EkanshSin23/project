@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+
+    &.scrolled {
+        background-color: white;
+        -webkit-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+    }
+
+    .navbarContainer {
+        padding: 0px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        background: transparent;
+
+        .left {
+            flex: 1;
+
+            span {
+
+                font-weight: bolder;
+                font-size: 30px;
+            }
+
+        }
+
+        .center {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 20px;
+
+
+            .link {
+                text-decoration: none;
+                font-weight: 700;
+                color: #222;
+            }
+
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .signup {
+                cursor: pointer;
+                border-radius: 50rem;
+                border: 0.5px solid white;
+                background-color: transparent;
+                max-width: max-content;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                }
+
+                &.scroll {
+                    border: 0.5px solid black;
+                    color: black;
+                }
+            }
+
+            .post {
+                cursor: pointer;
+                border-radius: 50rem;
+                border: 0.5px solid rgb(112, 239, 112);
+                background-color: transparent;
+                max-width: max-content;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(112, 239, 112);
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: rgb(112, 239, 112);
+                    color: black;
+                    -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                }
+
+                &.scroll {
+                    border: none;
+                    color: black;
+                    background-color: rgb(112, 239, 112);
+                }
+            }
+
+        }
+    }
+
+}

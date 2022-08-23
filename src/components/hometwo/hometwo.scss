@@ -1,0 +1,53 @@
+.hometwo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .container {
+        padding: 100px;
+
+        .top {
+            line-height: 15px;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+                opacity: .7;
+            }
+        }
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin: 40px 0;
+
+
+            .cardss {
+                display: flex;
+                gap: 40px;
+
+                width: 2984px;
+                transition: all 0.4s linear;
+
+
+            }
+
+
+        }
+
+        .bottom {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+
+
+
+        }
+    }
+}

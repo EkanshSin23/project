@@ -143,7 +143,7 @@
 
         .colordiv {
             background-color: #002745;
-            // background-color: #46a094;
+
             position: absolute;
             right: 0;
             border-radius: 200px;
@@ -153,7 +153,10 @@
             transform: rotate(32deg);
             transform-origin: bottom left;
 
+            animation: fadeIn;
 
+            animation-duration: 1s;
+            animation-delay: 0;
         }
 
         .cards {
@@ -179,6 +182,10 @@
                 background-size: contain;
 
                 z-index: 5;
+                // animation: fadeIn;
+
+                // animation-duration: 2s;
+                // animation-delay: 0;
             }
 
             .cardtwo {
@@ -195,6 +202,10 @@
                 left: 0;
                 z-index: 4;
                 transform-origin: bottom left;
+                //     animation: fadeIn;
+
+                //     animation-duration: 3s;
+                //     animation-delay: 0;
             }
 
             .cardthree {
@@ -203,7 +214,7 @@
 
                 background: white;
                 position: absolute;
-                transform: rotate(14deg);
+
                 width: 70%;
                 border-radius: 40px;
                 height: 64vh;
@@ -211,6 +222,11 @@
                 left: 0;
                 z-index: 3;
                 transform-origin: bottom left;
+                // animation: bounce;
+
+                // animation-duration: 4s;
+                // animation-delay: 0;
+                transform: rotate(14deg);
             }
 
             .cardinfo {

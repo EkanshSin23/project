@@ -42,9 +42,9 @@ const Homeone = () => {
             </div>
             <div className="right">
                 <div className="cards">
-                    <div className="cardone animate__animated animate__fadeInRight"></div>
-                    <div className="cardtwo "></div>
-                    <div className="cardthree "></div>
+                    <div className="cardone animate__animated "></div>
+                    <div className="cardtwo animate__animated "></div>
+                    <div className="cardthree animate__animated "></div>
                     <div className="cardinfo">
                         <div className="content">
                             <div className="title">
@@ -62,7 +62,7 @@ const Homeone = () => {
                         </div>
                     </div>
                 </div>
-                <div className="colordiv "></div>
+                <div className="colordiv animate__animated "></div>
 
             </div>
         </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 import Featured from '../../components/featured/Featured'
+import Footer from '../../components/footer/Footer'
 import Homeone from '../../components/homeone/Homeone'
 import Hometwo from '../../components/hometwo/Hometwo'
 import Navbar from '../../components/navbar/Navbar'
 import Subscribe from '../../components/subscribe/Subscribe'
+
 import './home.scss'
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
                 <Hometwo />
                 <Featured />
                 <Subscribe />
+                <Footer />
+                {/* <Dashboard /> */}
             </div>
 
         </div>

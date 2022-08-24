@@ -8,7 +8,7 @@ import PublicIcon from '@mui/icons-material/Public';
 const Featuredcard = () => {
     return (
         <div className="featuredContainer">
-            <div className='featuredcard' >
+            <div className='featuredcard animate__animated animate__fadeInUp' >
                 <div className="top">
                     <div className="topTop">
                         <LocalAtmIcon className='icon' />

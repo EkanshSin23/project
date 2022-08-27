@@ -58,6 +58,10 @@
             justify-content: flex-end;
             gap: 10px;
 
+            .signup_login {
+                display: none;
+            }
+
             .signup {
                 cursor: pointer;
                 border-radius: 50rem;
@@ -114,7 +118,127 @@
                 }
             }
 
+            .navbar_icon {
+                cursor: pointer;
+                display: none;
+
+            }
+
         }
     }
 
+}
+
+.dropdown_container {
+
+    display: none;
+    height: max-content;
+
+
+
+
+
+    .link {
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+    }
+
+
+
+
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+
+
+        .navbarContainer {
+
+
+            .center {
+                display: none;
+
+
+            }
+
+            .right {
+                .signup {
+                    color: black;
+                    border: 1px solid black;
+                }
+
+                .navbar_icon {
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    .dropdown_container {
+        height: 600px;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        padding: 70px;
+
+        &.show {
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 500px;
+            justify-content: space-around;
+            background-color: white;
+            -webkit-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+
+        }
+
+
+
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 100% !important;
+
+        .navbarContainer {
+
+
+
+            .center {
+
+
+                display: none;
+            }
+
+
+
+            .right {
+                .signup {
+                    display: none;
+                }
+
+                .signup_login {
+                    display: inline;
+                    border: 1px solid black !important;
+                    margin: 0 10px;
+                }
+
+                .post {
+                    display: none;
+                }
+
+                .navbar_icon {
+                    display: contents;
+                }
+            }
+        }
+    }
 }

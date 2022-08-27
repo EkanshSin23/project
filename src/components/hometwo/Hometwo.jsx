@@ -28,13 +28,13 @@ const Hometwo = () => {
     }
     return (
         <div className='hometwo'>
-            <div className="container">
-                <div className="top">
+            <div className="container_hometwo">
+                <div className="top_hometwo">
                     <h1>Search By Category</h1>
                     <p>Search your career opportunity with our categories</p>
                 </div>
-                <div className="center">
-                    <div className="cardss" ref={slide}>
+                <div className="center_hometwo">
+                    <div className="cardss_hometwo" ref={slide}>
                         <Card />
                         <Card />
                         <Card />
@@ -48,7 +48,7 @@ const Hometwo = () => {
 
                     </div>
                 </div>
-                <div className="bottom">
+                <div className="bottom_hometwo">
                     <div className="dot left" onClick={() => handleClick("left")} style={{ display: !isMoved && "none" }}><ChevronLeftIcon /></div>
 
                     <div className="dot right" onClick={() => handleClick("right")}><ChevronRightIcon /></div>

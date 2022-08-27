@@ -6,7 +6,7 @@
     // background-color: black;
     margin: 20px 100px;
 
-    .container {
+    .container_subscribe {
 
         display: flex;
         flex-direction: column;
@@ -15,7 +15,7 @@
 
         padding: 50px;
 
-        .title {
+        .title_subscribe {
             text-align: center;
             line-height: 1;
 
@@ -25,7 +25,7 @@
 
         }
 
-        .centerImg {
+        .centerImg_subscribe {
             margin-top: 50px;
             width: 400px;
             height: 300px;
@@ -36,7 +36,7 @@
             }
         }
 
-        .input {
+        .input_subscribe {
             display: flex;
 
             background-color: white;
@@ -82,5 +82,35 @@
 
         }
 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .subscribe {
+        width: 100% !important;
+        margin: 0 !important;
+
+        .container_subscribe {
+            padding: 0 !important;
+
+            .title_subscribe {
+                padding: 20px !important;
+
+                h1 {
+                    font-size: 30px !important;
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+            }
+
+            .centerImg_subscribe {
+                padding: 0 20px !important;
+                width: 80% !important;
+            }
+
+
+        }
     }
 }

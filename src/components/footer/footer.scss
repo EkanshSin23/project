@@ -96,3 +96,39 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 50px 20px !important;
+
+
+        .container_footer {
+            flex-direction: column;
+
+            .left_footer {
+                gap: 10px !important;
+
+                .title {
+                    font-size: 30px !important;
+                }
+
+                .number {
+                    font-size: 25px !important;
+                }
+            }
+
+            .right_footer {
+                margin-left: 0 !important;
+                display: block;
+            }
+        }
+    }
+
+    .bottom_footer {
+        flex-direction: column !important;
+
+        p {
+            text-align: center;
+        }
+    }
+}

@@ -17,7 +17,7 @@ const Home = () => {
                 <Featured />
                 <Subscribe />
                 <Footer />
-                {/* <Dashboard /> */}
+
             </div>
 
         </div>

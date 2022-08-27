@@ -19,21 +19,22 @@ const Sidebar = () => {
                 <ul>
 
                     <p className="title">Admin Tools</p>
-                    <Link to="/users" style={{ textDecoration: "none" }}>
+                    <Link to="/dashboard" style={{ textDecoration: "none" }}>
                         <li><span> <HouseOutlinedIcon className='icon' />Dashboard</span></li>
                     </Link>
-                    <Link to="/products" style={{ textDecoration: "none" }}>
-                        <li><span> <CreateOutlinedIcon className='icon' />Edit Profile</span></li>
+                    <Link to="/profile" style={{ textDecoration: "none" }}>
+                        <li><span> <CreateOutlinedIcon className='icon' />Edit Profile</span></li></Link>
+
+                    <Link to="/dashboard" style={{ textDecoration: "none" }}>  <li><span><ContactPageOutlinedIcon className='icon' /> New Job Offers</span></li>
                     </Link>
-                    <li><span><ContactPageOutlinedIcon className='icon' /> New Job Offers</span></li>
-                    <li><span><BusinessCenterOutlinedIcon className='icon' /> Manage Jobs</span></li>
-                    <li><span><AccountCircleOutlinedIcon className='icon' />Candidates</span></li>
-                    <li><span><LockOutlinedIcon className='icon' />Change Password</span></li>
+                    <Link to="/managejob" style={{ textDecoration: "none" }}><li><span><BusinessCenterOutlinedIcon className='icon' /> Manage Jobs</span></li> </Link>
+                    <Link to="/profile" style={{ textDecoration: "none" }}>   <li><span><AccountCircleOutlinedIcon className='icon' />Candidates</span></li></Link>
+                    <Link to="/profile" style={{ textDecoration: "none" }}>  <li><span><LockOutlinedIcon className='icon' />Change Password</span></li></Link>
                     <br />
                     <p className="title">Insights</p>
-                    <li><span><LocalPostOfficeOutlinedIcon className='icon' />Inbox </span></li>
-                    <li><span><NotificationsNoneOutlinedIcon className='icon' />Notifications </span></li>
-                    <li><span><SettingsOutlinedIcon className='icon' />Settings </span></li>
+                    <Link to="/profile" style={{ textDecoration: "none" }}> <li><span><LocalPostOfficeOutlinedIcon className='icon' />Inbox </span></li></Link>
+                    <Link to="/profile" style={{ textDecoration: "none" }}>  <li><span><NotificationsNoneOutlinedIcon className='icon' />Notifications </span></li></Link>
+                    <Link to="/profile" style={{ textDecoration: "none" }}> <li><span><SettingsOutlinedIcon className='icon' />Settings </span></li></Link>
 
 
                 </ul>

@@ -8,6 +8,16 @@
     z-index: 999;
     font-family: 'Mulish', sans-serif;
     padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: #e6f0f9;
+
+    // &.scrolled {
+    //     background-color: white;
+    //     -webkit-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+    //     -moz-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+    //     box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+    // }
 
 
 

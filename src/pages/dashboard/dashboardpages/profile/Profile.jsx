@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Chart from '../../components/dashboardcomponents/chart/Chart'
-import Navbar from '../../components/dashboardcomponents/navbar/Navbar'
-import Sidebar from '../../components/dashboardcomponents/sidebar/Sidebar'
-import Widget from '../../components/dashboardcomponents/widget/Widget'
-import './dashboard.scss'
-import Profile from './dashboardpages/profile/Profile'
-const Dashboard = () => {
+import Navbar from '../../../../components/dashboardcomponents/navbar/Navbar'
+import Chart from '../../../../components/dashboardcomponents/chart/Chart'
+
+import Sidebar from '../../../../components/dashboardcomponents/sidebar/Sidebar'
+import Widget from '../../../../components/dashboardcomponents/widget/Widget'
+import './profile.scss'
+const Profile = () => {
 
     return (
         <div className='dashboard'>
@@ -17,7 +17,7 @@ const Dashboard = () => {
 
 
                     <div className="top_main">
-                        <h2>Dashboard</h2>
+                        <h2>Profile</h2>
                         <p>Welcome, XXXXX</p>
                     </div>
                     <div className="widgets">
@@ -45,4 +45,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Profile

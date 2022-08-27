@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 
-    .container {
+    .container_hometwo {
         padding: 100px;
 
-        .top {
+        .top_hometwo {
             line-height: 15px;
 
             h1 {
@@ -19,14 +19,14 @@
             }
         }
 
-        .center {
+        .center_hometwo {
             display: flex;
             flex-wrap: wrap;
             overflow: hidden;
             margin: 40px 0;
 
 
-            .cardss {
+            .cardss_hometwo {
                 display: flex;
                 gap: 40px;
 
@@ -39,7 +39,7 @@
 
         }
 
-        .bottom {
+        .bottom_hometwo {
             margin-top: 50px;
             display: flex;
             gap: 20px;
@@ -48,6 +48,24 @@
 
 
 
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container_hometwo {
+        padding: 50px !important;
+
+        .top_hometwo {
+            line-height: 30px !important;
+
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                line-height: 20px !important;
+            }
         }
     }
 }

@@ -1,14 +1,20 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Card from '../card/Card'
 import './hometwo.scss'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Hometwo = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     const slide = useRef()
     const [slider, setslider] = useState(0)
     const [isMoved, setisMoved] = useState(false)
 
     const handleClick = (direction) => {
+
         setisMoved(true);
         const distance = slide.current.getBoundingClientRect().x - 100;
         console.log(distance);

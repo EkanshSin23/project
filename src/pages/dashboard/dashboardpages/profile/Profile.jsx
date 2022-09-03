@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from '../../../../components/dashboardcomponents/navbar/Navbar'
-import Chart from '../../../../components/dashboardcomponents/chart/Chart'
+
 
 import Sidebar from '../../../../components/dashboardcomponents/sidebar/Sidebar'
-import Widget from '../../../../components/dashboardcomponents/widget/Widget'
+
 import './profile.scss'
 const Profile = () => {
 
@@ -17,22 +17,29 @@ const Profile = () => {
 
 
                     <div className="top_main">
-                        <h2>Profile</h2>
-                        <p>Welcome, XXXXX</p>
+                        <h2>Edit Profile</h2>
+                        <p>Edit your company profile page info.</p>
                     </div>
-                    <div className="widgets">
-                        <Widget color="#e6f0f98b" />
-                        <Widget color="#fff8ec" />
-                        <Widget color="#c4e8c252" />
-                        <Widget color="rgba(255, 192, 203, 0.475)" />
+                    <div className="dashboard_profile_form">
+                        <label htmlFor="name">Company Name*</label>
+                        <input type="text" id='name' placeholder='Company Name' />
+                        <div className="dashboard_profile_form_input">
+                            <div>
+                                <label htmlFor="email" className='label'>Email*</label>
+                                <input type="text" id='email' placeholder='Email' /></div>
+                            <div>  <label htmlFor="phone">Phone*</label>
+                                <input type="text" id='phone' placeholder='Phone' /></div>
+                        </div>
+                        <label htmlFor="website">Website*</label>
+                        <input type="text" id='website' placeholder='Website' />
                     </div>
-                    <div className="chart_container">
-                        <div className="chart_one">
-                            <h2>Company's Jobs Visiter</h2>
-                            <Chart aspect={2 / 1} title="Last 6 months" /></div>
-                        <div className="chart_second">
-                            <h2>Applicaions</h2>
-                            <Chart aspect={2 / 1} title="Last 6 months" /></div>
+                    <div className="about_container">
+                        <div className="about_profile">
+                            <h2>About</h2>
+                            <textarea name="" id="" cols="130" rows="10" placeholder='About Company' >
+
+                            </textarea>
+                        </div>
 
                     </div>
 

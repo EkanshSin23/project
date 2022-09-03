@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from '../../../../components/dashboardcomponents/navbar/Navbar'
-import Chart from '../../../../components/dashboardcomponents/chart/Chart'
+
 
 import Sidebar from '../../../../components/dashboardcomponents/sidebar/Sidebar'
-import Widget from '../../../../components/dashboardcomponents/widget/Widget'
+
 import './joboffer.scss'
 const Joboffer = () => {
 
@@ -17,25 +17,37 @@ const Joboffer = () => {
 
 
                     <div className="top_main">
-                        <h2>Job</h2>
-                        <p>Welcome, XXXXX</p>
+                        <h2>New Job Offer</h2>
+                        <p>Add a new job to your company's job list.</p>
                     </div>
-                    <div className="widgets">
-                        <Widget color="#e6f0f98b" />
-                        <Widget color="#fff8ec" />
-                        <Widget color="#c4e8c252" />
-                        <Widget color="rgba(255, 192, 203, 0.475)" />
-                    </div>
-                    <div className="chart_container">
-                        <div className="chart_one">
-                            <h2>Company's Jobs Visiter</h2>
-                            <Chart aspect={2 / 1} title="Last 6 months" /></div>
-                        <div className="chart_second">
-                            <h2>Applicaions</h2>
-                            <Chart aspect={2 / 1} title="Last 6 months" /></div>
+                    <div className="dashboard_job_form">
+                        {/* <form action=""></form> */}
+                        <label htmlFor="job_title">Job Title*</label>
+                        <input type="text" id='job_title' placeholder='Add Job Title' />
+                        <div className="dashboard_job_form_input">
+                            <div>
+                                <label htmlFor="category" className='label'>Category*</label>
+                                <input type="text" id='category' placeholder='Category' /></div>
+                            <div>
+                                <label htmlFor="phone">Location*</label>
+                                <select name="" id="" className='select'>
+                                    <option value=""> 1  </option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select></div>
+                        </div>
 
                     </div>
+                    <div className="about_container">
+                        <div className="about_job">
+                            <h2>Job Description</h2>
+                            <textarea name="" id="" cols="130" rows="10" placeholder='About Company' >
 
+                            </textarea>
+                        </div>
+
+                    </div>
 
                 </div>
 

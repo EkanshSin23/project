@@ -2,7 +2,7 @@
 
 .sidebar {
 
-    flex: 1;
+    // flex: 1;
     height: 100vh;
     margin-top: 20px;
     background: transparent;
@@ -68,6 +68,19 @@
 
 
             }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .sidebar {
+        display: none;
+
+        &.show_sidebar {
+            display: block !important;
+            background-color: white !important;
+            z-index: 999;
+            margin-top: 0;
         }
     }
 }

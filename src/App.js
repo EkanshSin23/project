@@ -4,6 +4,9 @@ import Dashboard from './pages/dashboard/Dashboard'
 import { Profiler } from "react";
 import Profile from "./pages/dashboard/dashboardpages/profile/Profile";
 import Joboffer from "./pages/dashboard/dashboardpages/joboffer/Joboffer";
+import Managejob from "./pages/dashboard/dashboardpages/managejob/Managejob";
+import Candidates from "./pages/dashboard/dashboardpages/candidates/Candidates";
+// import New from "./pages/dashboard/dashboardpages/new/New";
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/managejob" element={<Joboffer />} />
+        <Route path="/joboffer" element={<Joboffer />} />
+        <Route path="/managejob" element={<Managejob />} />
+        <Route path="/candidates" element={<Candidates />} />
+        {/* <Route path="/users/new" element={<New />} /> */}
 
 
 

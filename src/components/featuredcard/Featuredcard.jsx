@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './featuredcard.scss'
 import { Link } from 'react-router-dom'
-import WorkIcon from '@mui/icons-material/Work';
+// import WorkIcon from '@mui/icons-material/Work';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import PublicIcon from '@mui/icons-material/Public';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Featuredcard = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     return (
         <div className="featuredContainer">
-            <div className='featuredcard animate__animated animate__fadeInUp' >
+            <div data-aos='fade-up' className='featuredcard ' >
                 <div className="top_featuredcard">
                     <div className="topTop_featuredcard">
                         <LocalAtmIcon className='icon_featuredcard' />
@@ -38,3 +44,5 @@ const Featuredcard = () => {
 }
 
 export default Featuredcard
+
+// animate__animated animate__fadeInUp

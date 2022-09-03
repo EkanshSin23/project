@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './homeone.scss'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import PublicIcon from '@mui/icons-material/Public';
 import 'animate.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Homeone = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     return (
         <div className='homeone'>
             <div className="left_homeone">

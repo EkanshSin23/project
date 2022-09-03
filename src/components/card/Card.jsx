@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './card.scss'
 import { Link } from 'react-router-dom'
 import WorkIcon from '@mui/icons-material/Work';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Card = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     return (
-        <div className='card animate__animated animate__fadeInUp' >
+        <div data-aos='slide-up' className='card ' >
             <div className="icons ">
                 <WorkIcon className='icon' />
             </div>

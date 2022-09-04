@@ -13,7 +13,7 @@ const Card = () => {
             <div className="icons ">
                 <WorkIcon className='icon' />
             </div>
-            <div className="title">Buisness Developement</div>
+            <div className="title ">Buisness Developement</div>
             <div className="detail"><Link to="/" className='link'>2 open positions</Link> </div>
             <div className="detail"><Link to="/" className='link'>Follow</Link> </div>
         </div>

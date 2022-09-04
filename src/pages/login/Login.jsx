@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { User } from '../../context/contextfile'
 import './login.scss'
 const Login = () => {
-    const { modal, setmodal } = useContext(User)
+    const { modal } = useContext(User)
     const initialValues = { email: '', password: '' }
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setformErrors] = useState({})
@@ -18,11 +18,11 @@ const Login = () => {
 
     }
     useEffect(() => {
-        console.log(formErrors);
+        // console.log(formErrors);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(formValues);
+            // console.log(formValues);
         }
-    }, [formErrors])
+    }, [formErrors, formValues, isSubmit])
     const handleSubmit = (e) => {
         e.preventDefault()
         setformErrors(validate(formValues))
@@ -67,7 +67,7 @@ const Login = () => {
                             <input type="password" id="password" placeholder='Password' name='password' onChange={handleChange} />
                             <p>{formErrors.password}*</p>
                             <div className="checkbox"><span> <input type="checkbox" id="checkbox" /><label htmlFor="checkbox" >Remember me</label></span>
-                                <a href="#">Forgot Password?</a>
+                                <a href="/#">Forgot Password?</a>
                             </div>
 
                             <button onClick={handleSubmit}>Login</button>

@@ -21,7 +21,7 @@ const Featured = () => {
                     <Featuredcard />
                 </div>
                 <div className="bottom_featured">
-                    <button>All Offers ></button>
+                    <button>All Offers </button>
                 </div>
             </div>
 

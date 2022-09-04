@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Dashboard from './pages/dashboard/Dashboard'
-import { Profiler } from "react";
+
 import Profile from "./pages/dashboard/dashboardpages/profile/Profile";
 import Joboffer from "./pages/dashboard/dashboardpages/joboffer/Joboffer";
 import Managejob from "./pages/dashboard/dashboardpages/managejob/Managejob";

@@ -1,11 +1,12 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './navbar.scss'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
-import { User, UserContext } from '../../../context/contextfile';
-
+import { User } from '../../../context/contextfile';
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
+    const navigate = useNavigate()
     const { sidebar, setsidebar } = useContext(User)
     const [isScrolled, setScroll] = useState(false);
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 
             <div className="navbar_dashboard_Container">
                 <div className="left">
-                    <span>JettHire</span>
+                    <span onClick={() => navigate('/')}>JettHire</span>
                 </div>
 
                 <div className="right">

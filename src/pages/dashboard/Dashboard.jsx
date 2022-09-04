@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React from 'react'
 import Chart from '../../components/dashboardcomponents/chart/Chart'
 import Navbar from '../../components/dashboardcomponents/navbar/Navbar'
 import Sidebar from '../../components/dashboardcomponents/sidebar/Sidebar'
@@ -7,12 +7,12 @@ import './dashboard.scss'
 
 const Dashboard = () => {
 
-    
+
     return (
         <div className='dashboard'>
-              <Navbar />
+            <Navbar />
             <div className="dashboard_container">
-               <Sidebar />
+                <Sidebar />
                 <div className="main">
 
 

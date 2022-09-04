@@ -1,10 +1,10 @@
 import React from 'react'
 import './widget.scss'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
+// import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
+// import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 
 const Widget = (props) => {
     // const amt = 100;
